@@ -3,7 +3,7 @@ import numpy as np
 
 
 class SudokuGenerator(SudokuSolver):
-    def __init__(self, difficulty=4, seed):
+    def __init__(self, difficulty=4, seed=42):
         super().__init__(seed)
         self.difficulty = difficulty
         self.unsolved_board, self.solved_board = self.generator(self.difficulty)
